@@ -1,12 +1,30 @@
 // List 4 data types in a multiline comment
+/* 
+boolean
+float  
 
+*/
 // Typeof
+console.log(typeof 69);
+console.log(typeof "black");
+console.log(typeof true);
 
+var x= 1; 
+console.log(typeof x);
 // Let vs Const vs Var
+var x = 5;
 
+let price = 456;
+const name = "Abby";
+alert(price);
 // Reassignment (no let)
+price = 70;
+price = 100;
 
+alert(price);
 // Essential Operations
+let sum = price + 3
+console.log(sum);
 
 // Additional operations
 
