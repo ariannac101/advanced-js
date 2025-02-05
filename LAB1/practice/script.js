@@ -2,7 +2,7 @@
 /* 
 boolean
 float  
-
+string 
 */
 // Typeof
 console.log(typeof 69);
@@ -25,7 +25,16 @@ alert(price);
 // Essential Operations
 let sum = price + 3
 console.log(sum);
-
+sum = sum - 5;
+console.log(sum);
+sum= sum/4;
+console.log(sum);
+sum = sum + 16;
+console.log(sum)
+sum += 30;
+console.log(sum);
+sum -= 17;
+console.log(sum);
 // Additional operations
 
 // User Input

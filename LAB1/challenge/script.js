@@ -13,19 +13,33 @@ let game = 15.99;
 let shoes = 89.78;
 
 
-
-
 // 1. If divided evenly, how much would each sibling get for the week?
-//each siblings should each get 43 
+
+let amount = weeklyAllowance / 3;
+console.log(amount);
+
 
 // 2. How many games can Jordan buy with their cut?
+let video = amount / game;
+video= Math.round(video);
+console.log(video);
 // jordan can buy two games with their cut. 
 
 // 3. The cost of games just went up by a dollar and shoes are on sale at 50% (half) off. Change the variables to their new prices.
 var games = 16.99;
+shoes = shoes / 2;
+console.log(shoes)
 
 
 // 4. Quinn and Ricardo are twins. If they put their money together, how many on sale shoes can they buy in a month (4 weeks)?
+
+let twinAmount = amount * 2;
+console.log(twinAmount);
+let weekly = twinAmount * 4; 
+console.log(weekly);
+let numShoes = weekly / shoes;
+numShoes = Math.round( numShoes);
+console.log( "The twins can buy " + numShoes + " pairs of shoes");
 
 
 // 5. How many more games can they buy if they put their money together compared to if they had bought games on their own?
