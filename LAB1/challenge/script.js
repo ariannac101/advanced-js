@@ -189,3 +189,21 @@ missingLeg(side1, side2);
 /// For example: factorial(3) = 3*2*1 = 6 ---  factorial(5) = 5*4*3*2*1 = 120
 /// Write a function factorial(x) that finds the factorial of any integer.
 // Prompt the user for a number and call the function
+
+const factorial= (x) => {
+    if (x < 0 ){
+        return ("factorial is not defined");
+    }if(x == 0 || x == 1){
+return (1)
+
+
+}
+let result = 1;
+for( i = 2; i <= x; i++){
+    result *= i
+}
+return result;
+}
+// prompt the user for a number
+const number= parseInt(prompt("Enter a non negative number/integer to find it's factorials"));
+console.log("Factorial of ${number} is ${factorial(number)}");
