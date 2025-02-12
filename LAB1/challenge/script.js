@@ -1,4 +1,4 @@
-
+const prompt= require ("prompt-sync")()
 // Mild Challenges 
 /// The three siblings get their allowance once a week.
 /// Their current obsession is buying unique card games and collecting shoes.
@@ -75,7 +75,7 @@ const perfectRoot= (x) => {
     return Math.floor(root) === root ? root :"No perfect root";
     };
 console.log(getRandomNum());
-console.log(gretting("Jayla"));
+console.log(greeting("Jayla"));
 
 // 13. Fix/Finish the following functions.
 /// Then, call them with at least 2 different inputs to ensure they work.
@@ -154,6 +154,7 @@ console.log(buyBurgers(user));
 
 console.log(buyBurgers(10));
 console.log(buyBurgers(2));
+console.log(buyBurgers(3));
 
 
 // 16. A meal consists of 1 burger, 1 fry, and 1 soda.
@@ -170,9 +171,20 @@ console.log(buyMeals(5));
 // 17. [Challenge] Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
 // Prompt the user for the two sides and call the function
 /// The larger side should be the hypotenuse  
+//to determine which side is hypotenuse
+const missingLeg= ( side1, side2 ) => {
+    const hypotenuse = Math.max(side1, side2);
+    const leg = Math.min(side1, side2);
 
+    // calculates the missing leg
+     const missing_leg = Math.sqrt(hypotenuse ** 2 - leg ** 2);
+       
+     console.log(`The length of the missing leg is ${missing_leg.toFixed(2)}`);
+}
 
-
+const side1= parseFloat(prompt("Enter the length of the first side (hypotenuse or leg):"));
+const side2= parseFloat(prompt("Enter the length of the first side (hypotenuse or leg):"));
+missingLeg(side1, side2);
 // 18. [Super Challenge] In math, Factorial is the product of an integer and all the integers below it.
 /// For example: factorial(3) = 3*2*1 = 6 ---  factorial(5) = 5*4*3*2*1 = 120
 /// Write a function factorial(x) that finds the factorial of any integer.
