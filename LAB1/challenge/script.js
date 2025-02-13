@@ -1,4 +1,4 @@
-
+const prompt = require('prompt-sync')();
 
 // Mild Challenges 
 /// The three siblings get their allowance once a week.
