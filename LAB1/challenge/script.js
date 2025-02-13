@@ -1,4 +1,5 @@
-const prompt= require ("prompt-sync")()
+
+
 // Mild Challenges 
 /// The three siblings get their allowance once a week.
 /// Their current obsession is buying unique card games and collecting shoes.
@@ -206,4 +207,4 @@ return result;
 }
 // prompt the user for a number
 const number= parseInt(prompt("Enter a non negative number/integer to find it's factorials"));
-console.log("Factorial of ${number} is ${factorial(number)}");
+console.log(`Factorial of ${number} is ${factorial(number)}`);
