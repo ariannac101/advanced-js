@@ -45,8 +45,6 @@ console.log(games);
 
 let totalGames = Math.floor(combinedAllowance / game); // what they can buy together.
 console.log(totalGames);
-// if the price was 15.99 they can buy 8 games, but with the right price it's 7 games they can buy
-
 
 // 6. Print out the three siblings' names. "The three siblings are __, __, and ___."
 console.log( `The three siblings are ${sibling1} , ${sibling2}, and ${sibling3}`);
@@ -62,6 +60,7 @@ console.log(sibling3.replace(/a/g,'' ));
 // 11. Use console.log() and a built-in method to print out "De La Rosa"
 let namePart =sibling3.slice(18,30);
 console.log(namePart);
+
 // Medium Challenges
 
 // 12. Rewrite these function as an arrow function.
@@ -86,7 +85,7 @@ const addNums = (x, y) => {
     return x + y;
 }
 // uncomment the line below, to call the function, and add one more function call
-console.log( addNums(4, 6));
+console.log(addNums(4, 6));
 console.log(addNums(5,15));
 
 
@@ -101,7 +100,7 @@ const isBeyonce = (name) => {
 // Test "Beyonce" and other names to ensure it works
 console.log(isBeyonce("Beyonce"));
 console.log(isBeyonce("Blue"));
-
+console.log(isBeyonce("George"));
 
 /// c. If the number is even, return the number divided by 2, otherwise, return the number
 /// For example reduceEvens(10) => 5 -- reduceEvens(11) => 11
@@ -115,8 +114,6 @@ const reduceEvens = (x) => {
 //Write your own function calls
 console.log(reduceEvens(11));
 console.log(reduceEvens(20));
-console.log(reduceEvens(8));
-console.log(reduceEvens(3));
 
 
 // 14. Write a function called shortenString(string) that returns the first 10 characters of a string if it is longer than 10

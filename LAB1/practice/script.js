@@ -1,6 +1,6 @@
 // List 4 data types in a multiline comment
 /* 
-
+integer
 boolean
 float  
 string 
